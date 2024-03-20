@@ -10,25 +10,33 @@ Algoritmo "Exercício06Cap10"
 // Data atual  : 18/03/2024
 Var
 // Seção de Declarações das variáveis 
-n, somaDivisores, divisor:inteiro
-
+   i,soma,n:inteiro
+   sair:caracter
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
 // Inicializa a soma dos divisores como zero
-escreva("Digite o valor de n: ")
+   sair:="n"
+   enquanto (sair="n") faca
+   escreval("Digite o valor de n: ")
     leia(n)
-somaDivisores <- 0
-    para divisor de 1 ate (n-1) faca
-        se n % divisor = 0 entao
-            somaDivisores <- somaDivisores + divisor
-        fimse
-    fimpara
-    se somaDivisores = n entao
-        escreva("O número ", n, " é perfeito.")
+    enquanto (n<=0) faca
+       escreval("Erro, digite o valor de n")
+       leia(n)
+    fimenquanto
+    i:=1
+    soma:=0
+    enquanto (i<n) faca
+      se (n%i=0) entao
+        soma:=soma+i
+      fimse
+      i:=i+1
+    fimenquanto
+    se (soma=n) entao
+       escreval("Perfeito")
     senao
-        escreva("O número ", n, " não é perfeito.")
+       escreval("Não é perfeito")
     fimse
-Fimalgoritmo
-
-
+    escreval("Deseja sair do programa (s/n)")
+    leia(sair)
+    fimenquanto
 Fimalgoritmo
