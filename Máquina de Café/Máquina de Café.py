@@ -17,9 +17,7 @@ def maquinas():
             if valor_pago >= preco:
                 troco = valor_pago - preco
                 print(f"Troco: R$ {troco:.2f}")
-                print(f"Produto escolhido: {produto}")
-            elif valor_pago != "1" or "2" or "5" or "10" or "20" or "50" or "100" or "200":
-                print("Nota falsa. Por favor insira uma nota existente")    
+                print(f"Produto escolhido: {produto}")  
             else:
                 print("Valor insuficiente. Insira uma quantia válida.")
     
