@@ -14,5 +14,3 @@ if __name__ == '__main__':
     x = dados()
     y = dados()
     valores(x, y)
-               
-    
