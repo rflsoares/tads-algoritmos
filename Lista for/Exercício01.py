@@ -4,4 +4,4 @@ def numeros_inteiros():
         print(i)
         
 if __name__=='__main__':
-    a=numeros_inteiros()            
+    a=numeros_inteiros()
