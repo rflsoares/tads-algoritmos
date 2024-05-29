@@ -17,4 +17,25 @@ def main():
     print(f"Quantidade total de números acumulados: {quantidade_total}")
         
 if __name__=='__main__':
+    numeros_pares()
+
+def numeros_pares():
+    pares = []
+    i = 1
+    while i <= 15:
+        if i % 2 == 0:
+            pares.append(i)
+        i += 1
+    
+    soma = sum(pares)
+    quantidade = len(pares)
+    
+    print("Números pares acumulados:")
+    for numero in pares:
+        print(numero)
+    
+    print(f"Soma dos valores acumulados: {soma}")
+    print(f"Quantidade de números acumulados: {quantidade}")
+
+if __name__ == '__main__':
     numeros_pares()   
