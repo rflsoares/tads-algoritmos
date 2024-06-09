@@ -6,4 +6,4 @@ def tabuada():
         i += 1
 
 if __name__=='__main__':
-    tabuada()   
+    tabuada()
